@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.spinner-border {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+}
+
+.total-amount {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn {
+  border-color: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+  outline-color: none !important;
+  box-shadow: none !important;
+  border-color: none !important;
+}
+
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+  border-color: none !important;
+}

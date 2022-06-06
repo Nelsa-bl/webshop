@@ -1,0 +1,17 @@
+.offcanvas-header {
+    background-color: #f5f5f5;
+}
+
+.total-amount-box {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.basket-item {
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+    
+    &:last-child {
+        border: none;
+    }
+}

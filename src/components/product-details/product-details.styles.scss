@@ -1,0 +1,64 @@
+.shop-page-details {
+    .container {
+        max-width: 900px;
+    }
+    
+    .image-box {
+        display: block;
+        padding: 30px;
+        img {
+            max-height: 600px;
+            margin: auto;
+            display: block;
+        }
+    }
+    .info-box {
+        padding: 50px;
+        .title {
+            display: block;
+            font-weight: 500;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .price {
+            display: block;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 600;
+        }
+        .category {
+            display: block;
+            background-color: #f5f5f5;
+            padding: 5px;
+            width: max-content;
+            font-weight: 300;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        .desc {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-weight: 100;
+            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .btn-box {
+            display: block;
+            .addToBasket-btn {
+                display: block;
+                width: 100%;
+                background-color: #000;
+                border: none;
+                border-radius: 0;
+                padding: 15px;
+
+                &:hover {
+                    background-color: darkseagreen !important;
+                }
+            }
+        }
+    }
+}
