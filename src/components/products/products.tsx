@@ -15,7 +15,6 @@ import './products.styles.scss'
 import { CartItemType } from "../../App";
 
 type Props = {
-    cartItems: CartItemType[];
     data: CartItemType[] | undefined;
     isLoading: boolean;
     error: any;
@@ -24,7 +23,7 @@ type Props = {
     handleChange: (e: { target: { value: string; } }) => void;
 };
 
-const ShopPage: React.FC<Props> = ({ cartItems, addToCart, search, handleChange, data, isLoading, error }) => {
+const ShopPage: React.FC<Props> = ({ addToCart, search, handleChange, data, isLoading, error }) => {
 
 
     // When loading
@@ -36,7 +35,7 @@ const ShopPage: React.FC<Props> = ({ cartItems, addToCart, search, handleChange,
         return (
             <div className="shop-page">
                 <Container>
-                    <Searchs handleChange={handleChange}/>
+                    <Searchs search={search} handleChange={handleChange}/>
                     <Row>
                         {data?.filter(   
                         s => s.title.toLowerCase().includes(search.toLocaleLowerCase()) || 

@@ -12,16 +12,13 @@ import './product-details.styles.scss'
 import { CartItemType } from "../../App";
 
 type Props = {
-    cartItems: CartItemType[];
     data: CartItemType[] | undefined;
     isLoading: boolean;
     error: any;
     addToCart: (clikedItem: CartItemType) => void;
-    search: string;
-    handleChange: (e: { target: { value: string; } }) => void;
 };
 
-const ProductDetails: React.FC<Props> = ({ cartItems, addToCart, search, handleChange, data, isLoading, error }) => {
+const ProductDetails: React.FC<Props> = ({ addToCart, data, isLoading, error }) => {
     
     // Get slug and convert to num
     const { id } = useParams() as { 

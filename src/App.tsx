@@ -106,7 +106,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<ShopPage 
           addToCart={handleAddToCart} 
-          cartItems={cartItems} 
           search={search} 
           handleChange={handleChange} 
           data={data}
@@ -115,9 +114,6 @@ const App = () => {
 
           <Route path="products/:id" element={<ProductDetails 
           addToCart={handleAddToCart}
-          cartItems={cartItems} 
-          search={search} 
-          handleChange={handleChange} 
           data={data}
           isLoading={isLoading}
           error={error}/>} />
